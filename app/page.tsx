@@ -16,7 +16,7 @@ export default function Home() {
     {error ? <ErrorState message={error} /> : !data ? <Loading /> : <>
       <section className="metric-grid"><div className="metric"><strong>{data.departments.length}</strong><span>Active departments</span></div><div className="metric"><strong>{data.projects.length}</strong><span>Active projects</span></div><div className="metric"><strong>{data.tasks.length}</strong><span>Active tasks</span></div></section>
       <div className="section-label"><h2>Projects in motion</h2><Link href="/departments">Browse departments →</Link></div>
-      {data.projects.length ? <div className="card-grid">{data.projects.slice(0, 6).map((project) => <Link className="card" href={`/projects/${project.projectId}`} key={project.projectId}><StatusBadge value={project.status} /><h3>{project.projectName}</h3><p>{project.description || "No project description yet."}</p><div className="card-meta"><span>{project.departmentName}</span><span>{project.tasks.length} tasks</span></div></Link>)}</div> : <EmptyState text="No active projects yet." />}
+      {data.projects.length ? <div className="card-grid">{data.projects.slice(0, 6).map((project) => <Link className="card" href={`/projects/${project.projectId}`} key={project.projectId}><StatusBadge value={project.status} /><h3>{project.projectName}</h3><p>{project.description || "No project description yet."}</p><div className="card-meta"><span>{project.departmentName}</span><span>Starts {project.startDate}</span></div></Link>)}</div> : <EmptyState text="No active projects yet." />}
     </>}
   </>;
 }
