@@ -147,7 +147,10 @@ tbody tr:hover { background: #f6faf7; }
 .field input, .field select, .field textarea { min-height: 44px; border-color: #d7e2dc; border-radius: 10px 10px 10px 4px; padding: 12px 13px; background: #f8faf8; transition: border-color .18s ease, box-shadow .18s ease, background-color .18s ease; }
 .field input:hover, .field select:hover, .field textarea:hover { border-color: #b9cdc1; background: white; }
 .field input:focus, .field select:focus, .field textarea:focus { background: white; }
-.checkbox-list label { border-color: #d7e2dc; border-radius: 9px; background: #f8faf8; transition: border-color .18s ease, background-color .18s ease; }
+.checkbox-list { gap: 8px; }
+.checkbox-list label { cursor: pointer; border-color: #d7e2dc; border-radius: 999px; padding: 9px 13px 9px 10px; background: #f8faf8; color: #506159; font-family: var(--font-sans), sans-serif; font-size: 12px; font-weight: 650; letter-spacing: 0; text-transform: none; transition: border-color .18s ease, background-color .18s ease, transform .18s ease; }
+.checkbox-list label:hover { border-color: #9fc9b0; background: #f0f7f3; transform: translateY(-1px); }
+.checkbox-list input[type="checkbox"] { width: 15px; height: 15px; min-height: 0; margin: 0; padding: 0; border: 0; border-radius: 3px; background: transparent; box-shadow: none; accent-color: var(--green); cursor: pointer; }
 .checkbox-list label:has(input:checked) { border-color: #8bc2a4; background: #e6f4eb; color: #135f40; }
 
 .search-grid { padding: 18px; }
