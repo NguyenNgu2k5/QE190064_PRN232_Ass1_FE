@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const links = [["/", "Overview"], ["/departments", "Departments"], ["/projects", "Projects"], ["/search", "Tasks"]] as const;
+const links = [["/", "Overview"], ["/departments", "Departments"], ["/projects", "Projects"], ["/search", "Tasks"], ["/tags", "Tags"]] as const;
 
 export function AppShell({ children }: { children: ReactNode }) {
   const pathname = usePathname();

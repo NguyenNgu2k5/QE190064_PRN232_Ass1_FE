@@ -158,7 +158,10 @@ tbody tr:hover { background: #f6faf7; }
 .directory-search .field { flex: 1; }
 .project-search .field:first-child { flex: 2; }
 .badge { border: 1px solid rgba(20,57,43,.05); font-family: var(--font-mono), monospace; font-size: 9px; letter-spacing: .02em; }
-.tag { border-left-width: 2px; border-radius: 6px; font-family: var(--font-mono), monospace; font-size: 9px; }
+.tag { display: inline-flex; align-items: center; gap: 7px; border: 1px solid color-mix(in srgb, var(--tag-color) 28%, #d9e2dc); border-radius: 999px; padding: 6px 9px; background: color-mix(in srgb, var(--tag-color) 9%, white); color: #44564d; font-family: var(--font-sans), sans-serif; font-size: 10px; font-weight: 650; }
+.tag::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--tag-color); box-shadow: 0 0 0 3px color-mix(in srgb, var(--tag-color) 14%, transparent); }
+.tag-directory .tag-list { gap: 10px; }
+.tag-directory .tag { padding: 10px 14px; font-size: 12px; }
 .toast { top: 96px; right: max(24px, calc((100vw - 1240px) / 2)); border-radius: 12px 12px 12px 4px; box-shadow: var(--shadow); animation: toast-in .35s ease both; }
 .toast.error-toast { border-color: #edb1a8; background: #fff0ed; color: #9d4035; }
 
