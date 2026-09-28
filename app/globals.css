@@ -155,7 +155,7 @@ tbody tr:hover { background: #f6faf7; }
 .tag { border-left-width: 2px; border-radius: 6px; font-family: var(--font-mono), monospace; font-size: 9px; }
 .toast { top: 96px; right: max(24px, calc((100vw - 1240px) / 2)); border-radius: 12px 12px 12px 4px; box-shadow: var(--shadow); animation: toast-in .35s ease both; }
 
-.confirm-dialog { width: min(430px, calc(100% - 32px)); padding: 0; border: 0; border-radius: 24px 24px 24px 8px; background: #fff; color: var(--ink); box-shadow: 0 30px 90px rgba(12, 31, 25, .28); }
+.confirm-dialog { position: fixed; inset: 0; width: min(430px, calc(100% - 32px)); margin: auto; padding: 0; border: 0; border-radius: 24px 24px 24px 8px; background: #fff; color: var(--ink); box-shadow: 0 30px 90px rgba(12, 31, 25, .28); }
 .confirm-dialog::backdrop { background: rgba(13, 31, 27, .58); backdrop-filter: blur(7px); }
 .confirm-dialog-body { padding: 30px; }
 .confirm-icon { display: grid; place-items: center; width: 46px; height: 46px; margin-bottom: 24px; border-radius: 15px 15px 15px 5px; background: #f8ded9; color: #9d4035; font-family: var(--font-mono), monospace; font-size: 20px; font-weight: 800; }
